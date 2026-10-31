@@ -42,3 +42,35 @@ ENV/
 
 # PyCharm env
 .idea
+
+# Local settings and private working files
+.vscode/
+.service/
+.codex/
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+chat_history*
+conversation_history*
+
+# Cache and temporary files
+data/cache/
+.ruff_cache/
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
+
+# Obsolete block comparison and school filtering outputs
+/examples/shlisselburg/data/prepared/manual_blocks.geojson
+/examples/shlisselburg/data/prepared/manual_blocks_primary.geojson
+/examples/shlisselburg/data/prepared/manual_boundary.geojson
+/examples/shlisselburg/data/prepared/manual_reference.json
+/examples/shlisselburg/data/prepared/school_duplicates.json
+/examples/shlisselburg/data/prepared/schools_excluded.geojson
+/examples/shlisselburg/results/manual_comparison.json
+/examples/shlisselburg/results/manual_comparison_map.html
+/examples/shlisselburg/results/manual_comparison_map.png

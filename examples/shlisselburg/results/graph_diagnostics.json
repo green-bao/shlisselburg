@@ -1,0 +1,38 @@
+{
+  "walk": {
+    "source_status": "saved_graphml",
+    "nodes": 13235,
+    "edges": 30020,
+    "weak_components": 34,
+    "strong_components": 34,
+    "largest_weak_component_nodes": 12881,
+    "attached_blocks": 96,
+    "unattached_blocks": 1,
+    "max_connector_m": 238.60572585821345,
+    "median_connector_m": 31.244595275736504,
+    "rejected_water_connectors": 30091,
+    "finite_pairs_including_diagonal": 8655,
+    "unreachable_pairs": 754,
+    "buffer_m": 2000.0,
+    "units": "minutes",
+    "unreachable_meaning": "Нет пути в сохранённом графе либо нет допустимого соединителя; дальний объезд вне графа не исключён."
+  },
+  "drive": {
+    "source_status": "saved_graphml",
+    "nodes": 3619,
+    "edges": 7065,
+    "weak_components": 6,
+    "strong_components": 151,
+    "largest_weak_component_nodes": 2202,
+    "attached_blocks": 90,
+    "unattached_blocks": 7,
+    "max_connector_m": 629.7034802918542,
+    "median_connector_m": 39.449136526747296,
+    "rejected_water_connectors": 52806,
+    "finite_pairs_including_diagonal": 8107,
+    "unreachable_pairs": 1302,
+    "buffer_m": 2000.0,
+    "units": "minutes",
+    "unreachable_meaning": "Нет пути в сохранённом графе либо нет допустимого соединителя; дальний объезд вне графа не исключён."
+  }
+}

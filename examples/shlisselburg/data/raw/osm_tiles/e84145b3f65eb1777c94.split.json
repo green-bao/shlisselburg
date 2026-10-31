@@ -1,0 +1,10 @@
+{
+  "bbox": [
+    30.94905644779515,
+    59.89350904511186,
+    31.107740835447892,
+    59.951927149701824
+  ],
+  "reason": "You requested too many nodes (limit is 50000). Either request a smaller area, or use planet.osm",
+  "requested_at": "2026-10-30T02:51:45.902214+03:00"
+}

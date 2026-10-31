@@ -1,0 +1,110 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "is_living": false,
+        "number_of_floors": 1.0,
+        "footprint_area": 466.4930716091782,
+        "build_floor_area": 466.4930716091782,
+        "living_area": 0.0,
+        "non_living_area": 466.4930716091782,
+        "population": 0.0,
+        "count": 1,
+        "osm_key": "relation/1659542"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.023656006670812,
+          59.93698443750313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "is_living": false,
+        "number_of_floors": 1.0,
+        "footprint_area": 3.0522732232301832,
+        "build_floor_area": 3.0522732232301832,
+        "living_area": 0.0,
+        "non_living_area": 3.0522732232301832,
+        "population": 0.0,
+        "count": 1,
+        "osm_key": "way/1311220761"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.034858136923223,
+          59.95353694980692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "is_living": false,
+        "number_of_floors": 1.0,
+        "footprint_area": 16.667985368862432,
+        "build_floor_area": 16.667985368862432,
+        "living_area": 0.0,
+        "non_living_area": 16.667985368862432,
+        "population": 0.0,
+        "count": 1,
+        "osm_key": "way/1500664604"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.034773838302364,
+          59.953415451325434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "is_living": false,
+        "number_of_floors": 1.0,
+        "footprint_area": 3.352991972358989,
+        "build_floor_area": 3.352991972358989,
+        "living_area": 0.0,
+        "non_living_area": 3.352991972358989,
+        "population": 0.0,
+        "count": 1,
+        "osm_key": "way/1500665151"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.03446500132124,
+          59.95329670002176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "is_living": false,
+        "number_of_floors": 1.0,
+        "footprint_area": 199.51036614919934,
+        "build_floor_area": 199.51036614919934,
+        "living_area": 0.0,
+        "non_living_area": 199.51036614919934,
+        "population": 0.0,
+        "count": 1,
+        "osm_key": "way/1503955702"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.039170431516332,
+          59.94870535063195
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Школьные корпуса из ручного комплекта существующего состояния",
+  "source_file": "Моделирование территории/Финал/Геоданные/Сервисы/school.geojson",
+  "source_sha256": "4e0fe99dfeb6beaac26c16f45e283ac56825614b1c4cf2938d0951f63bbeeb2a",
+  "local_file": "manual_schools_primary.geojson",
+  "local_sha256": "16aa583b9d398275d49bd14b1e076adfffc0f189e32822594fccb07f21b3532b",
+  "source_scope": "Существующее состояние: два корпуса одной школы",
+  "feature_count": 2,
+  "capacity_total": 1617,
+  "capacity_source": "manual_existing_state",
+  "capacity_source_label": "Сведения сайтов образовательных организаций",
+  "capacity_note": "Вместимость учебных корпусов принята по сведениям, опубликованным на сайтах образовательных организаций. Дата этих сведений не указана.",
+  "school_records": [
+    {
+      "osm_key": "way/116432510",
+      "name": "Школа № 1",
+      "capacity": 683
+    },
+    {
+      "osm_key": "way/285212050",
+      "name": "Школа № 1 (старшие классы)",
+      "capacity": 934
+    }
+  ],
+  "capacity_primary_source": "school_websites"
+}

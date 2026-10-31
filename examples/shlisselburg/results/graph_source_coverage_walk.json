@@ -1,0 +1,7 @@
+{
+  "raw_municipal_road_ways": 195,
+  "snapshot_ways": 26614,
+  "missing_raw_road_way_ids": [],
+  "mode_filter": "[\"highway\"][\"area\"!~\"yes\"][\"access\"!~\"private\"][\"highway\"!~\"abandoned|bus_guideway|construction|cycleway|motor|no|planned|platform|proposed|raceway|razed|rest_area|services\"][\"foot\"!~\"no\"][\"service\"!~\"private\"][\"sidewalk\"!~\"separate\"][\"sidewalk:both\"!~\"separate\"][\"sidewalk:left\"!~\"separate\"][\"sidewalk:right\"!~\"separate\"]",
+  "selected_road_ways_before_context_clip": 4912
+}

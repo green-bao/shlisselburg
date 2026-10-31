@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "true",
+        "amenity": "school",
+        "addr:city": "Шлиссельбург",
+        "addr:housenumber": "3",
+        "addr:postcode": "187320",
+        "addr:street": "улица 18-го Января",
+        "contact:phone": null,
+        "contact:vk": null,
+        "contact:website": null,
+        "name": "Шлиссельбургская Детская Художественная Школа",
+        "website": "https://art.shlisselburg.org",
+        "official_name": null,
+        "contact:email": null,
+        "fire_rank": null,
+        "barrier": null,
+        "osm_key": "node/3658005837"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.0410851,
+          59.9383484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "true",
+        "amenity": "school",
+        "addr:city": null,
+        "addr:housenumber": null,
+        "addr:postcode": null,
+        "addr:street": null,
+        "contact:phone": "+7 81362 75406;+7 999 1989683",
+        "contact:vk": "https://vk.com/shsosh1",
+        "contact:website": "http://shsosh1.ru",
+        "name": "Школа № 1",
+        "website": null,
+        "official_name": "Муниципальное бюджетное общеобразовательное учреждение Шлиссельбургская средняя общеобразовательная школа №1 с углубленным изучением отдельных предметов",
+        "contact:email": "shsch1@yandex.ru",
+        "fire_rank": "1bis",
+        "barrier": "fence",
+        "osm_key": "way/116432510"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              31.0410198,
+              59.938088
+            ],
+            [
+              31.0412331,
+              59.9381353
+            ],
+            [
+              31.0420313,
+              59.9383147
+            ],
+            [
+              31.0421232,
+              59.9383332
+            ],
+            [
+              31.0423572,
+              59.9383834
+            ],
+            [
+              31.0423986,
+              59.9383925
+            ],
+            [
+              31.04274,
+              59.9384678
+            ],
+            [
+              31.0428416,
+              59.9384914
+            ],
+            [
+              31.0432855,
+              59.938584
+            ],
+            [
+              31.0439447,
+              59.9378735
+            ],
+            [
+              31.0434933,
+              59.9377677
+            ],
+            [
+              31.0433259,
+              59.9377279
+            ],
+            [
+              31.0404948,
+              59.9371057
+            ],
+            [
+              31.0398054,
+              59.9378113
+            ],
+            [
+              31.0407158,
+              59.9380206
+            ],
+            [
+              31.0410198,
+              59.938088
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "true",
+        "amenity": "school",
+        "addr:city": null,
+        "addr:housenumber": null,
+        "addr:postcode": null,
+        "addr:street": null,
+        "contact:phone": "+7 81362 75406;+7 999 1989683",
+        "contact:vk": "https://vk.com/shsosh1",
+        "contact:website": "http://shsosh1.ru",
+        "name": "Школа № 1 (старшие классы)",
+        "website": null,
+        "official_name": "Муниципальное бюджетное общеобразовательное учреждение Шлиссельбургская средняя общеобразовательная школа №1 с углубленным изучением отдельных предметов",
+        "contact:email": "shsch1@yandex.ru",
+        "fire_rank": null,
+        "barrier": "fence",
+        "osm_key": "way/285212050"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              31.0326157,
+              59.9339098
+            ],
+            [
+              31.0344814,
+              59.934248
+            ],
+            [
+              31.0346565,
+              59.934199
+            ],
+            [
+              31.0353321,
+              59.933244
+            ],
+            [
+              31.0341878,
+              59.9329114
+            ],
+            [
+              31.0319377,
+              59.9322574
+            ],
+            [
+              31.0308859,
+              59.933601
+            ],
+            [
+              31.0326157,
+              59.9339098
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
