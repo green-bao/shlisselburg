@@ -1,0 +1,677 @@
+{
+  "mode": "drive",
+  "capacity": 600,
+  "total": 97,
+  "checked": 97,
+  "succeeded": 97,
+  "baseline_deficit": 269,
+  "ranking": [
+    {
+      "block_id": 0,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 1,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 2,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 3,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 4,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 5,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 6,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 7,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 8,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 9,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 10,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 11,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 12,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 13,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 14,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 15,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 16,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 17,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 18,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 19,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 20,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 21,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 22,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 23,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 25,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 27,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 28,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 29,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 30,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 31,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 32,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 33,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 34,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 35,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 36,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 37,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 38,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 39,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 40,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 41,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 42,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 43,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 44,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 45,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 46,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 47,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 48,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 49,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 50,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 51,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 52,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 53,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 54,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 55,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 56,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 57,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 58,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 59,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 60,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 61,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 62,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 63,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 64,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 65,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 66,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 67,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 68,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 69,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 70,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 71,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 72,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 73,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 74,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 75,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 76,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 77,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 78,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 79,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 80,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 81,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 82,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 83,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 84,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 85,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 86,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 87,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 88,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 89,
+      "deficit": 0,
+      "deficit_reduction": 269
+    },
+    {
+      "block_id": 24,
+      "deficit": 12,
+      "deficit_reduction": 257
+    },
+    {
+      "block_id": 26,
+      "deficit": 22,
+      "deficit_reduction": 247
+    },
+    {
+      "block_id": 90,
+      "deficit": 269,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 91,
+      "deficit": 269,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 92,
+      "deficit": 269,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 93,
+      "deficit": 269,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 94,
+      "deficit": 269,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 95,
+      "deficit": 269,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 96,
+      "deficit": 269,
+      "deficit_reduction": 0
+    }
+  ],
+  "best_block_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89
+  ],
+  "best_calculated_block_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89
+  ],
+  "errors": [],
+  "complete": true
+}

@@ -1,0 +1,557 @@
+{
+  "mode": "walk",
+  "capacity": 600,
+  "total": 97,
+  "checked": 97,
+  "succeeded": 97,
+  "baseline_deficit": 1145,
+  "ranking": [
+    {
+      "block_id": 4,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 6,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 15,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 17,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 18,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 19,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 21,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 23,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 24,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 27,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 28,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 29,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 30,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 31,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 32,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 33,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 34,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 35,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 38,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 39,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 44,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 46,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 65,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 84,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 85,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 92,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 93,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 94,
+      "deficit": 545,
+      "deficit_reduction": 600
+    },
+    {
+      "block_id": 20,
+      "deficit": 547,
+      "deficit_reduction": 598
+    },
+    {
+      "block_id": 37,
+      "deficit": 857,
+      "deficit_reduction": 288
+    },
+    {
+      "block_id": 7,
+      "deficit": 874,
+      "deficit_reduction": 271
+    },
+    {
+      "block_id": 40,
+      "deficit": 874,
+      "deficit_reduction": 271
+    },
+    {
+      "block_id": 16,
+      "deficit": 1114,
+      "deficit_reduction": 31
+    },
+    {
+      "block_id": 22,
+      "deficit": 1114,
+      "deficit_reduction": 31
+    },
+    {
+      "block_id": 25,
+      "deficit": 1114,
+      "deficit_reduction": 31
+    },
+    {
+      "block_id": 45,
+      "deficit": 1114,
+      "deficit_reduction": 31
+    },
+    {
+      "block_id": 67,
+      "deficit": 1114,
+      "deficit_reduction": 31
+    },
+    {
+      "block_id": 68,
+      "deficit": 1114,
+      "deficit_reduction": 31
+    },
+    {
+      "block_id": 89,
+      "deficit": 1133,
+      "deficit_reduction": 12
+    },
+    {
+      "block_id": 0,
+      "deficit": 1135,
+      "deficit_reduction": 10
+    },
+    {
+      "block_id": 36,
+      "deficit": 1135,
+      "deficit_reduction": 10
+    },
+    {
+      "block_id": 9,
+      "deficit": 1143,
+      "deficit_reduction": 2
+    },
+    {
+      "block_id": 66,
+      "deficit": 1143,
+      "deficit_reduction": 2
+    },
+    {
+      "block_id": 1,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 2,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 3,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 5,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 8,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 10,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 11,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 12,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 13,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 14,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 26,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 41,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 42,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 43,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 47,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 48,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 49,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 50,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 51,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 52,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 53,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 54,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 55,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 56,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 57,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 58,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 59,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 60,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 61,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 62,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 63,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 64,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 69,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 70,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 71,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 72,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 73,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 74,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 75,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 76,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 77,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 78,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 79,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 80,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 81,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 82,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 83,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 86,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 87,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 88,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 90,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 91,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 95,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    },
+    {
+      "block_id": 96,
+      "deficit": 1145,
+      "deficit_reduction": 0
+    }
+  ],
+  "best_block_ids": [
+    4,
+    6,
+    15,
+    17,
+    18,
+    19,
+    21,
+    23,
+    24,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    38,
+    39,
+    44,
+    46,
+    65,
+    84,
+    85,
+    92,
+    93,
+    94
+  ],
+  "best_calculated_block_ids": [
+    4,
+    6,
+    15,
+    17,
+    18,
+    19,
+    21,
+    23,
+    24,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    38,
+    39,
+    44,
+    46,
+    65,
+    84,
+    85,
+    92,
+    93,
+    94
+  ],
+  "errors": [],
+  "complete": true
+}

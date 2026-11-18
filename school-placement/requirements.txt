@@ -1,0 +1,4 @@
+blocksnet==1.0.0a9
+numpy==2.2.6
+pandas==2.3.3
+PuLP==2.7.0

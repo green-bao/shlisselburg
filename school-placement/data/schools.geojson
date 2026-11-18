@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/116432510",
+        "@id": "way/116432510",
+        "addr:city": null,
+        "addr:housenumber": null,
+        "addr:postcode": null,
+        "addr:street": null,
+        "amenity": "school",
+        "barrier": "fence",
+        "contact:email": "shsch1@yandex.ru",
+        "contact:phone": "+7 81362 75406;+7 999 1989683",
+        "contact:vk": "https://vk.com/shsosh1",
+        "contact:website": "http://shsosh1.ru",
+        "entrance": null,
+        "fire_rank": "1bis",
+        "name": "Школа № 1",
+        "official_name": "Муниципальное бюджетное общеобразовательное учреждение Шлиссельбургская средняя общеобразовательная школа №1 с углубленным изучением отдельных предметов",
+        "website": null,
+        "service_id": 22.0,
+        "capacity": 683,
+        "service_name": "Школа",
+        "osm_key": "way/116432510",
+        "capacity_estimated": false,
+        "capacity_source": "manual_existing_state",
+        "capacity_source_label": "Сайты образовательных организаций"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.04247404506227,
+          59.93784944066967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/285212050",
+        "@id": "way/285212050",
+        "addr:city": null,
+        "addr:housenumber": null,
+        "addr:postcode": null,
+        "addr:street": null,
+        "amenity": "school",
+        "barrier": "fence",
+        "contact:email": "shsch1@yandex.ru",
+        "contact:phone": "+7 81362 75406;+7 999 1989683",
+        "contact:vk": "https://vk.com/shsosh1",
+        "contact:website": "http://shsosh1.ru",
+        "entrance": null,
+        "fire_rank": null,
+        "name": "Школа № 1 (старшие классы)",
+        "official_name": "Муниципальное бюджетное общеобразовательное учреждение Шлиссельбургская средняя общеобразовательная школа №1 с углубленным изучением отдельных предметов",
+        "website": null,
+        "service_id": 22.0,
+        "capacity": 934,
+        "service_name": "Школа",
+        "osm_key": "way/285212050",
+        "capacity_estimated": false,
+        "capacity_source": "manual_existing_state",
+        "capacity_source_label": "Сайты образовательных организаций"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.03386705702384,
+          59.93358370010652
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Шлиссельбург: размещение школ</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="course-bar"><div><strong>ИИ в урбанистике</strong><span>Практика 3 · Шлиссельбург</span></div></div>
+  <header class="page-header">
+    <div><h1>Размещение новых школ</h1><p class="lead">Сравните, как расположение школ меняет доступность школьных мест в Шлиссельбурге.</p></div>
+    <label class="mode-label">Способ передвижения<select id="mode"><option value="walk">Пешком</option><option value="drive">На автомобиле</option></select></label>
+  </header>
+  <main>
+    <p id="status" role="status" aria-live="polite">Загрузка исходных данных...</p>
+    <section class="metrics" aria-label="Показатели всей территории">
+      <article><span>Новых мест</span><strong id="metric-new">-</strong><small>Всего в сети: <b id="metric-capacity">-</b></small></article>
+      <article><span>Остаточный дефицит</span><strong id="metric-deficit">-</strong><small>мест с учётом доступности</small></article>
+      <article><span>Сокращение дефицита</span><strong id="metric-reduction">-</strong><small>мест относительно исходного состояния</small></article>
+      <article><span>Обеспеченность</span><strong id="metric-provision">-</strong><small>Исходно: <b id="metric-original-provision">-</b></small></article>
+    </section>
+    <p class="hint model-context">Расчётная потребность: <b id="metric-demand">-</b> мест. Остаточный дефицит - неудовлетворённая потребность с учётом вместимости и доступности школ.</p>
+    <div class="workspace">
+      <section class="map-panel panel" aria-label="Карта кварталов">
+        <div class="panel-heading"><h2>Кварталы</h2><div class="map-tabs" role="group" aria-label="Отображение карты"><button type="button" data-view="baseline" class="active">Исходное</button><button type="button" data-view="scenario">Сценарий</button><button type="button" data-view="change">Изменение</button></div></div>
+        <p class="hint" id="map-description">Выберите квартал на карте. Цвет показывает долю обеспеченной расчётной потребности.</p>
+        <div class="map-wrap"><svg id="map" viewBox="0 0 900 650" role="img" aria-label="Интерактивная карта кварталов Шлиссельбурга"><g id="geography"></g><g id="blocks"></g><g id="labels"></g></svg><div class="map-tools"><button type="button" id="zoom-in" aria-label="Увеличить карту">+</button><button type="button" id="zoom-out" aria-label="Уменьшить карту">−</button><button type="button" id="zoom-reset">Обзор</button></div></div>
+        <div id="legend" class="legend"></div><p class="hint map-note">Геометрия кварталов из практики 2. Север вверху; к востоку расположено Ладожское озеро, к северо-западу - исток Невы. Онлайн-подложка не требуется.</p>
+      </section>
+      <aside class="sidebar panel">
+        <h2>Ваш сценарий</h2>
+        <section class="selected-panel">
+          <label for="block-id">Квартал на карте или по номеру</label><select id="block-id"><option value="">Выбрать...</option></select>
+          <div class="block-overview"><h3 id="selected-title">Выберите квартал на карте</h3><dl id="block-card"></dl></div>
+        </section>
+        <section class="manual-panel">
+          <label for="capacity">Добавить школьных мест</label><div class="inline-form"><input id="capacity" type="number" min="1" step="1" value="600" inputmode="numeric"><button id="add-school" type="button">Добавить</button></div>
+          <p class="hint">Добавьте одну или несколько школ, затем пересчитайте всю территорию.</p><ul id="additions" class="additions"><li class="hint">Новых школ пока нет.</li></ul>
+          <button id="calculate" class="primary full" type="button">Рассчитать сценарий</button><button id="reset" class="full secondary" type="button">Сбросить изменения</button><p id="pending" class="hint"></p>
+        </section>
+        <section class="automatic-panel">
+          <h3>Автоматический выбор</h3><p class="hint">Выбирается квартал, где одна новая школа сильнее всего сокращает суммарный дефицит мест. Каждый вариант рассчитывается от исходного состояния.</p>
+          <p class="hint">Для эксперимента сначала сохраните ручные варианты А (600 мест) и Б (300 + 300 мест) с объяснением выбора.</p>
+          <label for="auto-capacity">Вместимость новой школы, мест</label><input id="auto-capacity" type="number" min="1" step="1" value="600" inputmode="numeric"><button id="search" class="primary full" type="button">Разместить автоматически</button><progress id="search-progress" value="0" max="97"></progress><p id="search-status" class="hint" aria-live="polite">Поиск ещё не выполнялся.</p>
+        </section>
+      </aside>
+    </div>
+    <section class="panel results-panel"><div class="panel-heading"><h2>Сравнение по кварталам</h2><button id="export-csv" type="button">Сохранить CSV</button></div><p class="hint">Все значения относятся к выбранному способу передвижения. Вместимость задана в местах, обеспеченность - в процентах расчётной потребности.</p><div class="table-scroll"><table id="results-table"><thead><tr><th>Квартал</th><th>Население, чел.</th><th>Потребность, мест</th><th>Вместимость: исходно, мест</th><th>Вместимость: сценарий, мест</th><th>Обеспеченность: исходно, %</th><th>Обеспеченность: сценарий, %</th><th>Дефицит: исходно, мест</th><th>Дефицит: сценарий, мест</th><th>Сокращение дефицита, мест</th></tr></thead><tbody></tbody></table></div></section>
+    <section class="panel" id="search-panel"><div class="panel-heading"><h2>Рейтинг автоматического поиска</h2><button id="export-ranking" type="button" disabled>Сохранить рейтинг CSV</button></div><p id="best-summary" class="hint">Здесь появятся все проверенные варианты. Выберите строку, чтобы посмотреть размещение на карте.</p><div class="table-scroll ranking-scroll"><table id="ranking-table"><thead><tr><th>Место</th><th>Квартал</th><th>Дефицит, мест</th><th>Сокращение, мест</th><th>Результат расчёта</th></tr></thead><tbody></tbody></table></div></section>
+    <section class="panel"><div class="panel-heading"><h2>Сохранённые сценарии</h2><div class="button-row"><button id="export-scenarios" type="button">Сохранить JSON</button><label class="file-button">Загрузить JSON<input id="import-scenarios" type="file" accept=".json,application/json"></label></div></div><p class="hint">Сценарии сохраняются в этом браузере. Для переноса сохраните JSON. Сравнивайте показатели внутри одного способа передвижения.</p><div class="save-form"><label for="scenario-name">Название сценария</label><input id="scenario-name" type="text" maxlength="80" placeholder="Например: А - одна школа"><label for="scenario-basis">Почему выбраны эти кварталы</label><textarea id="scenario-basis" maxlength="2000" rows="3" placeholder="Для ручных вариантов А и Б запишите основания до автоматического поиска."></textarea><button id="save-scenario" type="button">Сохранить текущий</button></div><div class="table-scroll"><table id="saved-table"><thead><tr><th>Сценарий</th><th>Режим</th><th>Новые школы</th><th>Добавлено мест</th><th>Дефицит, мест</th><th>Сокращение, мест</th><th>Обоснование выбора</th><th>Действия</th></tr></thead><tbody></tbody></table></div></section>
+    <details class="panel sources"><summary>Данные и параметры расчёта</summary><div id="sources-text"><p>Кварталы, здания и уличная сеть получены из OpenStreetMap в практике 2. Население рассчитано по зданиям и оценке жилой площади; при отсутствии сведений о населении использована оценка 30 м² на человека. Учтены два корпуса одной школы в кварталах 3 и 24 с вместимостью 934 и 683 места. Вместимость принята по предоставленным сведениям сайтов образовательных организаций; дата состояния этих сведений не установлена.</p><p>Расчёт выполняется методом competitive_provision из BlocksNet 1.0.0a9. Учебные параметры модели: 120 мест на 1000 жителей, доступность до 15 минут, self_supply=True, max_depth=1. Они сохраняют сопоставимость с практикой 2. Проверка нормативного соответствия выходит за рамки расчёта. Население и матрицы времени в пути остаются исходными. Строка матрицы соответствует кварталу жителей, столбец - кварталу школы; время задано в минутах.</p><p>Обеспеченность - доля расчётной потребности, удовлетворённая с учётом вместимости и доступности школ. Кварталы без расчётной потребности выделены отдельно. Новая школа увеличивает вместимость выбранного квартала; модель учитывает доступность из соседних кварталов.</p><p>Приложение сравнивает варианты по кварталам. Выбор земельного участка и возможность строительства требуют отдельного градостроительного обоснования. Полнота и актуальность OpenStreetMap, оценка населения, округление потребности и принятые времена в пути ограничивают точность вывода. Пешая скорость принята 5 км/ч; автомобильные скорости заданы по типам дорог, без пробок и поиска парковки. Общественный и водный транспорт в модели отсутствуют.</p></div></details>
+  </main>
+  <footer>Практическое занятие 3 · Локальное приложение без платных сервисов</footer>
+  <script src="/app.js"></script>
+</body>
+</html>

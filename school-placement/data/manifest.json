@@ -1,0 +1,413 @@
+{
+  "title": "Шлиссельбург: кварталы и доступность",
+  "city": "Шлиссельбург, Кировский район, Ленинградская область, Россия",
+  "captured_at": "2026-10-30T02:52:00.183718+03:00",
+  "source": "OpenStreetMap contributors, ODbL; положение школьных корпусов: геоданные предыдущей учебной работы; вместимость: сведения сайтов образовательных организаций",
+  "versions": {
+    "blocksnet": "1.0.0a9",
+    "iduedu": "0.4.1",
+    "osmnx": "2.1.1",
+    "geopandas": "1.2.0",
+    "networkx": "3.7",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3"
+  },
+  "assumptions": [
+    "Пешеходная скорость 5 км/ч принята как постоянная модельная скорость.",
+    "Автомобильные скорости определяются по типам дорог по конфигурации IduEdu; пробки и поиск парковки не моделируются.",
+    "При отсутствии населения жилых зданий используется 30 м² жилой площади на человека, как в учебном примере.",
+    "Жилое назначение принимается только по явным типам building из учебного примера; building=yes не считается подтверждением жилья. В allotments постоянное население не назначается.",
+    "Вместимости двух существующих школьных корпусов, 683 и 934 места, приняты по сведениям, опубликованным на сайтах образовательных организаций.",
+    "Параметры потребности в школьных местах и времени из настройки school применяются как учебные расчётные параметры. Один порог отдельно используется для пешеходной и автомобильной матриц; автомобильные 15 минут не являются проверенным нормативом.",
+    "Графы охватывают муниципальную территорию с поясом 2 км; дальние объезды за пределами сохранённого графа могут отсутствовать.",
+    "Для подхода к дороге проверяются проекция на участок и его концы. Ближайший кандидат без пересечения воды соединяется с точкой квартала. В обоих режимах время движения по соединителю рассчитывается при скорости ходьбы 5 км/ч."
+  ],
+  "limitations": [
+    "Полнота и актуальность OpenStreetMap зависят от наполнения базы.",
+    "Дата получения ранее сохранённых отдельных слоёв OSM не зафиксирована; дата XML-выборки относится только к ней.",
+    "Дата состояния сведений о вместимости, опубликованных на сайтах образовательных организаций, не установлена; значения используются как предоставленные входные данные.",
+    "Неуточнённое назначение building=yes влияет на население, жилую и прочую площадь, MXI и обе типологии. Низкая расчётная доля жилья не подтверждает фактическую нежилую функцию.",
+    "Оценки площадей и населения зависят от полноты контуров и этажности.",
+    "Кварталы построены по картографическим барьерам и не являются официальными кадастровыми кварталами.",
+    "Водный и общественный транспорт не моделируются.",
+    "Расчёт между представительными точками кварталов является приближением доступности, а не маршрутом от конкретной двери до школы.",
+    "Прямой соединитель к сети проверяется только на пересечение водных полигонов OSM и не подтверждает проходимость через заборы, здания и закрытые территории.",
+    "Неизвестные или неполные водные полигоны OSM могут влиять на проверку подхода к сети; длины соединителей сохранены для контроля."
+  ],
+  "stages": {
+    "boundary": {
+      "updated_at": "2026-10-31T03:54:13.442137+03:00",
+      "status": "saved",
+      "area_km2": 44.87893872931264,
+      "osm_type": "relation",
+      "osm_id": 1767167,
+      "display_name": "Шлиссельбургское городское поселение, Кировский район, Ленинградская область, Северо-Западный федеральный округ, Россия",
+      "bounds": [
+        30.9847718,
+        59.911446,
+        31.2305825,
+        59.992398
+      ]
+    },
+    "osm_snapshot": {
+      "updated_at": "2026-10-31T03:54:13.809983+03:00",
+      "status": "saved",
+      "read_from": "verified_saved_xml",
+      "source": "OpenStreetMap Main API v0.6",
+      "source_url": "https://api.openstreetmap.org/api/0.6/map",
+      "counts": {
+        "node": 143617,
+        "way": 26614,
+        "relation": 656
+      },
+      "bbox": [
+        30.94905644779515,
+        59.89350904511186,
+        31.266425223100633,
+        60.010345254291785
+      ],
+      "context_buffer_m": 2000.0,
+      "sha256": "5d3b3c9f8a1ddba19fd967afbaf2f9b7cafd9a216a2926ad4d1978689d62febe",
+      "captured_from": "2026-10-30T02:51:47.901476+03:00",
+      "captured_to": "2026-10-30T02:52:00.183718+03:00",
+      "tile_count": 7,
+      "incomplete_relation_count": 164,
+      "missing_way_node_count": 0,
+      "metadata_file": "data/raw/osm_snapshot.json"
+    },
+    "source_roads": {
+      "updated_at": "2026-10-31T03:54:13.857316+03:00",
+      "status": "read_saved",
+      "count": 222,
+      "tags": {
+        "highway": [
+          "construction",
+          "crossing",
+          "living_street",
+          "motorway",
+          "motorway_link",
+          "motorway_junction",
+          "pedestrian",
+          "primary",
+          "primary_link",
+          "raceway",
+          "residential",
+          "road",
+          "secondary",
+          "secondary_link",
+          "services",
+          "tertiary",
+          "tertiary_link",
+          "track",
+          "trunk",
+          "trunk_link",
+          "turning_circle",
+          "turning_loop",
+          "unclassified"
+        ],
+        "service": [
+          "living_street",
+          "emergency_access"
+        ]
+      },
+      "obtained_at": null,
+      "source": "OpenStreetMap: сохранённый слой",
+      "file": "data/raw/roads.geojson",
+      "date_status": "not_recorded"
+    },
+    "source_railways": {
+      "updated_at": "2026-10-31T03:54:13.859309+03:00",
+      "status": "read_saved",
+      "count": 0,
+      "tags": {
+        "railway": "rail"
+      },
+      "obtained_at": null,
+      "source": "OpenStreetMap: сохранённый слой",
+      "file": "data/raw/railways.geojson",
+      "date_status": "not_recorded"
+    },
+    "source_water": {
+      "updated_at": "2026-10-31T03:54:13.876252+03:00",
+      "status": "read_saved",
+      "count": 65,
+      "tags": {
+        "riverbank": true,
+        "reservoir": true,
+        "basin": true,
+        "dock": true,
+        "canal": true,
+        "pond": true,
+        "natural": [
+          "water",
+          "bay"
+        ],
+        "waterway": [
+          "river",
+          "canal",
+          "ditch"
+        ],
+        "landuse": "basin",
+        "water": "lake"
+      },
+      "obtained_at": null,
+      "source": "OpenStreetMap: сохранённый слой",
+      "file": "data/raw/water.geojson",
+      "date_status": "not_recorded"
+    },
+    "source_landuse": {
+      "updated_at": "2026-10-31T03:54:13.906382+03:00",
+      "status": "read_saved",
+      "count": 238,
+      "tags": {
+        "landuse": true
+      },
+      "obtained_at": null,
+      "source": "OpenStreetMap: сохранённый слой",
+      "file": "data/raw/landuse.geojson",
+      "date_status": "not_recorded"
+    },
+    "source_buildings": {
+      "updated_at": "2026-10-31T03:54:14.408884+03:00",
+      "status": "read_saved",
+      "count": 1848,
+      "tags": {
+        "building": true
+      },
+      "obtained_at": null,
+      "source": "OpenStreetMap: сохранённый слой",
+      "file": "data/raw/buildings.geojson",
+      "date_status": "not_recorded"
+    },
+    "source_schools": {
+      "updated_at": "2026-10-31T03:54:14.414874+03:00",
+      "status": "saved",
+      "count": 2,
+      "source": "Положение корпусов из геоданных предыдущей учебной работы; вместимость по сведениям сайтов образовательных организаций",
+      "file": "data/prepared/manual_schools_primary.geojson",
+      "source_sha256": "4e0fe99dfeb6beaac26c16f45e283ac56825614b1c4cf2938d0951f63bbeeb2a",
+      "capacity_total": 1617.0,
+      "capacity_note": "Вместимость учебных корпусов принята по сведениям, опубликованным на сайтах образовательных организаций. Дата этих сведений не указана."
+    },
+    "blocks": {
+      "updated_at": "2026-10-31T03:54:19.258971+03:00",
+      "status": "saved",
+      "geometry_source": "OpenStreetMap barriers / BlocksNet cut_urban_blocks",
+      "source_files": [
+        "data/raw/boundary.geojson",
+        "data/raw/roads.geojson",
+        "data/raw/railways.geojson",
+        "data/raw/water.geojson"
+      ],
+      "block_id_rule": "zero-based consecutive generated polygon index",
+      "landuse_preparation": "union of OSM zones within each LandUse category",
+      "count": 97,
+      "area_km2": 14.811767312711334,
+      "union_area_km2": 14.811767312711341,
+      "outside_osm_boundary_m2": 0.0,
+      "overlap_area_m2": 0.0,
+      "water_overlap_m2": 9.662879163485627e-09,
+      "water_boundary_roundoff_m": 9.331397911231848e-10,
+      "water_area_roundoff_bound_m2": 1.9921444873498037e-07,
+      "water_intersection_max_boundary_distance_m": 4.4029983185013387e-10,
+      "unknown_landuse": [
+        "basin",
+        "harbour",
+        "reservoir"
+      ],
+      "max_landuse_share": 1.0000000000000002
+    },
+    "objects": {
+      "updated_at": "2026-10-31T03:54:21.097451+03:00",
+      "status": "saved",
+      "buildings": 1844,
+      "population": 15660.0,
+      "residential_buildings": 170,
+      "unknown_building_yes": 1440,
+      "floors_estimated": 1000,
+      "schools": 2,
+      "capacity": 1617.0,
+      "school_capacity_estimated": 0,
+      "school_capacity_source": "manual_existing_state",
+      "buildings_unassigned": 5,
+      "schools_unassigned": 0,
+      "spacematrix_clusters": 11,
+      "morphotype_eligible": 70
+    },
+    "graph_walk": {
+      "updated_at": "2026-10-31T03:54:32.608340+03:00",
+      "source_status": "saved_graphml",
+      "nodes": 13235,
+      "edges": 30020,
+      "weak_components": 34,
+      "strong_components": 34,
+      "largest_weak_component_nodes": 12881,
+      "attached_blocks": 96,
+      "unattached_blocks": 1,
+      "max_connector_m": 238.60572585821345,
+      "median_connector_m": 31.244595275736504,
+      "rejected_water_connectors": 30091,
+      "finite_pairs_including_diagonal": 8655,
+      "unreachable_pairs": 754,
+      "buffer_m": 2000.0,
+      "units": "minutes",
+      "unreachable_meaning": "Нет пути в сохранённом графе либо нет допустимого соединителя; дальний объезд вне графа не исключён."
+    },
+    "graph_drive": {
+      "updated_at": "2026-10-31T03:54:40.063038+03:00",
+      "source_status": "saved_graphml",
+      "nodes": 3619,
+      "edges": 7065,
+      "weak_components": 6,
+      "strong_components": 151,
+      "largest_weak_component_nodes": 2202,
+      "attached_blocks": 90,
+      "unattached_blocks": 7,
+      "max_connector_m": 629.7034802918542,
+      "median_connector_m": 39.449136526747296,
+      "rejected_water_connectors": 52806,
+      "finite_pairs_including_diagonal": 8107,
+      "unreachable_pairs": 1302,
+      "buffer_m": 2000.0,
+      "units": "minutes",
+      "unreachable_meaning": "Нет пути в сохранённом графе либо нет допустимого соединителя; дальний объезд вне графа не исключён."
+    },
+    "metrics_walk": {
+      "updated_at": "2026-10-31T03:54:42.325992+03:00",
+      "status": "saved",
+      "demand": 1886.0,
+      "capacity": 1617.0,
+      "demand_within": 741.0,
+      "demand_left": 1145.0,
+      "provision_strong_weighted": 0.3928950159066808,
+      "reachable_pairs": 8655,
+      "total_pairs": 9409,
+      "area_accessibility_unreachable": 97
+    },
+    "metrics_drive": {
+      "updated_at": "2026-10-31T03:54:42.369145+03:00",
+      "status": "saved",
+      "demand": 1886.0,
+      "capacity": 1617.0,
+      "demand_within": 1617.0,
+      "demand_left": 269.0,
+      "provision_strong_weighted": 0.8573700954400848,
+      "reachable_pairs": 8107,
+      "total_pairs": 9409,
+      "area_accessibility_unreachable": 97
+    },
+    "conclusions": {
+      "updated_at": "2026-10-31T03:54:43.996012+03:00",
+      "status": "saved",
+      "file": "conclusions.json",
+      "example_blocks": [
+        47,
+        23,
+        90,
+        3,
+        24
+      ]
+    },
+    "dashboard": {
+      "updated_at": "2026-10-31T03:54:44.224986+03:00",
+      "status": "saved",
+      "file": "dashboard.html"
+    }
+  },
+  "crs": "EPSG:32636",
+  "boundary_scope": "Муниципальная граница Шлиссельбургского городского поселения, включая воду; сухопутные кварталы выделяются отдельно.",
+  "boundary_locality": {
+    "osm_id": 1430462,
+    "area_km2": 12.994318905161629
+  },
+  "school_parameters": {
+    "demand_per_1000": 120,
+    "threshold_min": 15,
+    "self_supply": true,
+    "max_depth": 1,
+    "source": "blocksnet.config.service_types_config school, installed 1.0.0a9"
+  },
+  "summary": {
+    "blocks": 97,
+    "site_area_km2": 14.811767312711334,
+    "buildings": 1839,
+    "population": 15660.0,
+    "schools": 2,
+    "capacity": 1617.0,
+    "modes": {
+      "walk": {
+        "demand": 1886.0,
+        "capacity": 1617.0,
+        "demand_within": 741.0,
+        "demand_left": 1145.0,
+        "provision_strong_weighted": 0.3928950159066808,
+        "reachable_pairs": 8655,
+        "total_pairs": 9409,
+        "area_accessibility_unreachable": 97
+      },
+      "drive": {
+        "demand": 1886.0,
+        "capacity": 1617.0,
+        "demand_within": 1617.0,
+        "demand_left": 269.0,
+        "provision_strong_weighted": 0.8573700954400848,
+        "reachable_pairs": 8107,
+        "total_pairs": 9409,
+        "area_accessibility_unreachable": 97
+      }
+    }
+  },
+  "captured_at_scope": "osm_xml_snapshot",
+  "input_sources": {
+    "boundary_locality": {
+      "obtained_at": null,
+      "source": "OpenStreetMap via Nominatim",
+      "file": "data/raw/boundary_locality.geojson",
+      "date_status": "not_recorded"
+    },
+    "boundary_municipality": {
+      "obtained_at": null,
+      "source": "OpenStreetMap via Nominatim",
+      "file": "data/raw/boundary_municipality.geojson",
+      "date_status": "not_recorded"
+    },
+    "osm_xml_snapshot": {
+      "source": "OpenStreetMap Main API v0.6",
+      "file": "data/raw/osm_snapshot.osm",
+      "obtained_at": "2026-10-30T02:52:00.183718+03:00",
+      "received_from": "2026-10-30T02:51:47.901476+03:00",
+      "received_to": "2026-10-30T02:52:00.183718+03:00",
+      "date_status": "recorded_interval"
+    },
+    "roads": {
+      "obtained_at": null,
+      "source": "OpenStreetMap: сохранённый слой",
+      "file": "data/raw/roads.geojson",
+      "date_status": "not_recorded"
+    },
+    "railways": {
+      "obtained_at": null,
+      "source": "OpenStreetMap: сохранённый слой",
+      "file": "data/raw/railways.geojson",
+      "date_status": "not_recorded"
+    },
+    "water": {
+      "obtained_at": null,
+      "source": "OpenStreetMap: сохранённый слой",
+      "file": "data/raw/water.geojson",
+      "date_status": "not_recorded"
+    },
+    "landuse": {
+      "obtained_at": null,
+      "source": "OpenStreetMap: сохранённый слой",
+      "file": "data/raw/landuse.geojson",
+      "date_status": "not_recorded"
+    },
+    "buildings": {
+      "obtained_at": null,
+      "source": "OpenStreetMap: сохранённый слой",
+      "file": "data/raw/buildings.geojson",
+      "date_status": "not_recorded"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "numeric": [
+    "#E0E0E0",
+    "#BDBDBD",
+    "#969696",
+    "#666666",
+    "#333333"
+  ],
+  "mapBackground": "#F7F7F7",
+  "land": "#FAFAFA",
+  "water": "#DDEEF7",
+  "shore": "#A6CDDF",
+  "missing": "#F5F5F5",
+  "unreachable": "#F0F0F0",
+  "selection": "#161616",
+  "blockBoundary": "#FFFFFF",
+  "roadMajor": "#8C8C8C",
+  "roadMinor": "#B3B3B3",
+  "boundary": "#6B6B6B",
+  "school": "#386A86",
+  "building": "#808080",
+  "categories": {
+    "land_use": {
+      "agriculture": "#E7D99E",
+      "industrial": "#C8C8C8",
+      "recreation": "#B4DABD",
+      "residential": "#E9B8AA",
+      "special": "#C9BAE1"
+    },
+    "strelka_morphotype": {
+      "individual residential": "#E9B8AA",
+      "low-rise model": "#B4DABD",
+      "low-rise non-residential": "#E7D99E",
+      "mid-rise": "#C9BAE1"
+    },
+    "spacematrix_morphotype": {
+      "high-mid-rise low-density residential": "#B59FD1",
+      "low-rise low-density mixed-use": "#B4DABD",
+      "low-rise low-density non-residential": "#C8C8C8",
+      "low-rise low-density residential": "#E9B8AA",
+      "mid-rise low-density non-residential": "#E7D99E",
+      "mid-rise low-density residential": "#86B69B"
+    }
+  },
+  "missingOutline": "#8A8A8A",
+  "hatchForeground": "#777777",
+  "ui": {
+    "background": "#F7F7F7",
+    "panel": "#FFFFFF",
+    "ink": "#242424",
+    "muted": "#666666",
+    "grid": "#EAEAEA",
+    "accent": "#333333"
+  },
+  "charts": {
+    "histogram": "#DFDFDF",
+    "point_outline": "#555555",
+    "coverage_scale": [
+      "#E0E0E0",
+      "#BDBDBD",
+      "#969696",
+      "#666666",
+      "#333333"
+    ],
+    "histogram_outline": "#9F9F9F",
+    "missing_symbol": "circle-open",
+    "missing_color": "#888888",
+    "missing_outline": "#777777"
+  }
+}
